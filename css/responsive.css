@@ -980,6 +980,9 @@
   }
 }
 @media (max-width: 575px) {
+  .bank-card-img{
+  padding-top: 104% !important;
+  }
   .section-title h1,
   .faq-area-3 h1 {
     line-height: 1.2;
