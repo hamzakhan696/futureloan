@@ -5870,6 +5870,7 @@ header .header-top .header-info-right ul li i {
 }
 .loan-slider .single-slide .icon img {
   display: inline-block;
+  filter: sepia(100%) saturate(10000%) hue-rotate(40deg);
 }
 .loan-slider .single-slide h4 {
   font-size: 26px;
@@ -7971,7 +7972,7 @@ header .header-top .header-info-right ul li i {
   background-image: none;
 }
 .cta.cta-bg-violet {
-  background-color: #5816c5;
+  background-color: #F6F6F6;
 }
 .cta.cta-2 {
   padding: 80px 70px;
@@ -8074,7 +8075,7 @@ header .header-top .header-info-right ul li i {
   color: var(--p_color);
 }
 .cta-content h2 {
-  color: #fff;
+  color: #000;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
 }
@@ -10308,7 +10309,7 @@ blockquote .author span {
   padding-bottom: 30px;
 }
 .bank-footer-area .footer_top {
-  padding-top: 280px;
+  padding-top: 90px;
   padding-bottom: 100px;
 }
 .bank-footer-area .footer_top .f-widget-title {
