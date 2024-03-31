@@ -189,7 +189,7 @@
     margin-bottom: 50px;
   }
   .bank-banner-area{
-    padding-top: 180px;
+    padding-top: 200px;
   }
   .bank-app-showcase-area img{
     max-width: 100%;
@@ -259,11 +259,12 @@
     padding: 0 40px 0 20px;
   }
   .header-menu .theme-btn {
-    margin-left: 20px;
+    /* margin-left: 20px; */
     margin-top: 5px;
     margin-bottom: 5px;
     background-color: #FF5733;
     color: #fff;
+    padding: 0 16px !important;
   }
   .navbar-toggler {
     margin-right: 40px;
@@ -520,7 +521,7 @@
     margin-right: 12px;
   }
   .bank-banner-area {
-    padding-top: 120px;
+    padding-top: 200px;
   }
   .bank-card-img .bank-card:nth-child(3) {
       bottom: -100px;
@@ -613,6 +614,9 @@
     height: 50px;
     line-height: 49px;
     padding: 0 30px;
+  }
+  footer{
+    padding-top:40% !important;
   }
   .section-title h2 {
     font-size: 30px;

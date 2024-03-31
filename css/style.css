@@ -78,9 +78,6 @@ Table of Content:
   box-sizing: border-box;
 }
 
-body {
-  background-color: #f7f9fa;
-}
 
 a,
 .btn,
@@ -200,6 +197,9 @@ h4 {
 
 h5 {
   font-size: 20px;
+}
+body{
+  overflow-x: hidden;
 }
 
 .bg_white {
@@ -450,7 +450,7 @@ input::-webkit-inner-spin-button {
   text-align: center;
   border-radius: 4px;
   position: fixed;
-  bottom: 30px;
+  bottom: 100px;
   right: 30px;
   transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
   opacity: 0;
@@ -584,7 +584,7 @@ input::-webkit-inner-spin-button {
   position: relative;
   z-index: 1;
   background-color: #FF5733;
-  padding: 0 35px;
+  padding: 0 25px;
   overflow: hidden;
   text-align: center;
   text-transform: capitalize;
@@ -825,6 +825,9 @@ input::-webkit-inner-spin-button {
   background-color: transparent;
   background-image: linear-gradient(to top, #0050b2 0%, #4185d9 100%);
 }
+.desc-title {
+  background-color: #FCB900;
+}
 
 /*----------------------------------------------------*/
 /*----------------------------------------------------*/
@@ -1006,8 +1009,8 @@ input::-webkit-inner-spin-button {
   animation: spinner 3s infinite linear;
   border-radius: 50%;
   border: 3px solid #f1f6f8;
-  border-left-color: var(--brand_color);
-  border-top-color: var(--brand_color);
+  border-left-color: #FCB900;
+  border-top-color: #FCB900;
   margin: 0 auto 0em auto;
   position: absolute;
   left: -40px;
@@ -1021,7 +1024,7 @@ input::-webkit-inner-spin-button {
   height: 20px;
   border: 6px solid #fff;
   box-shadow: 0 0 20px 0 rgba(4, 46, 56, 0.2);
-  background: var(--brand_color);
+  background: #FCB900;
   position: absolute;
   right: 31px;
   top: 41px;
@@ -1250,7 +1253,7 @@ header .header-top .header-info-right ul li i {
   background-color: var(--secondary_color);
 } */
 .header-menu.navbar_fixed.header-menu-4 .navbar .menu > .nav-item > .nav-link {
-  color: #fff;
+  color: #FF5733;
 }
 .header-menu.navbar_fixed.header-menu-4 .navbar .menu > .nav-item > .nav-link.active {
   color: var(--brand_color);
@@ -1510,7 +1513,7 @@ header .header-top .header-info-right ul li i {
   margin-left: 38px;
 }
 .header-menu .theme-btn {
-  margin-left: 55px;
+  /* margin-left: 25px; */
 }
 .header-menu.header-menu-1 .theme-btn {
   background-color: #fff;
@@ -2649,10 +2652,13 @@ header .header-top .header-info-right ul li i {
     max-width: 100%;
   }
 }
-
+ .customer-num {
+  display: flex;
+  margin-top: 45px;
+}
 .bank-banner-area {
   background: #fff;
-  padding: 120px 0px 60px;
+  padding: 170px 0px 60px;
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -3159,7 +3165,7 @@ header .header-top .header-info-right ul li i {
   height: 100%;
 }
 .feature-card-widget-9.widget-link {
-  background-color: var(--brand_color);
+  background-color: #FCB900;
   border-color: #fff;
   box-shadow: none !important;
   display: flex;
@@ -4370,6 +4376,7 @@ header .header-top .header-info-right ul li i {
   bottom: 235px;
   box-shadow: 0px 16.9638557434px 68.9156646729px 0px rgba(63, 93, 101, 0.2509803922);
 }
+
 .about-area .cash-img .msg-2 {
   position: absolute;
   left: -16px;
@@ -4379,7 +4386,23 @@ header .header-top .header-info-right ul li i {
 
 .about-area-2 {
   overflow: hidden;
-  padding-top: 70px;
+  /* padding-top: 70px; */
+}
+.service-details h3{
+  font-size: 28px;
+  font-weight: 700;
+}
+.service-details h4{
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+}
+.service-details p{
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: var(--p_color);
+  line-height: 26px;
 }
 .about-area-2 h1 {
   font-size: 48px;
@@ -4549,13 +4572,31 @@ header .header-top .header-info-right ul li i {
   margin-right: 23px;
   margin-bottom: 2.5px;
 }
+.short-title-2-detail{
+  font-size: 20px;
+  font-weight: 700;
+  color: #FCB900;
+}
+.banner-content .section-title-personal h1{
+  color: #fff;
+  font-size: 32px;
+}
+
+.about-checked{
+  font-size: 20px;
+  color: #FCB900;
+}
+.about-detail h5{
+  font-size: 16px;
+  font-weight: 700;
+}
 .about-area-3 p {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 30px;
   color: var(--p_color);
-  max-width: 370px;
+  max-width: 570px;
   margin-bottom: 0;
 }
 .about-area-3 .video-tut {
@@ -7448,12 +7489,13 @@ header .header-top .header-info-right ul li i {
 /*  Security Tips CSS
   /*----------------------------------------*/
 .security-area .security-priority {
-  background-image: url(../images/shape.png);
+  /* background-image: url(../images/shape.png); */
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
   position: relative;
   overflow: hidden;
+  background-color: #FCB900;
 }
 .security-area .security-priority .shapes img {
   position: absolute;
@@ -7968,11 +8010,14 @@ header .header-top .header-info-right ul li i {
   margin: 0 10px;
 }
 .cta.cta-bg-primary {
-  background-color: var(--brand_color);
+  background-color: #FCB900;
   background-image: none;
 }
 .cta.cta-bg-violet {
-  background-color: #F6F6F6;
+  background-color: #FCB900;
+}
+.navbar-collapse.show{
+  margin-bottom: 5%;
 }
 .cta.cta-2 {
   padding: 80px 70px;
@@ -8148,7 +8193,7 @@ header .header-top .header-info-right ul li i {
 }
 
 .help-cta {
-  background-color: #d7f2fa;
+  background-color: #FCB900;
   background-position: center;
   background-size: cover;
 }
