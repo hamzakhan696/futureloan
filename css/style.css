@@ -207,7 +207,7 @@ body{
 }
 
 .bg_primary {
-  background-color: var(--brand_color) !important;
+  background-color: #003859 !important;
 }
 
 .bg_disable {
@@ -583,7 +583,7 @@ input::-webkit-inner-spin-button {
   border-radius: 4px;
   position: relative;
   z-index: 1;
-  background-color: #FF5733;
+  background-color: #003859;
   padding: 0 25px;
   overflow: hidden;
   text-align: center;
@@ -597,6 +597,25 @@ input::-webkit-inner-spin-button {
   color:#FF5733 !important;
   border: 1px solid #FF5733 ;
 }
+.input-with-flag {
+  position: relative;
+}
+.input-group-text{
+  background-color: #fff  !important;
+  padding: 3px !important;
+}
+.flag-icon {
+  position: absolute;
+  top: 50%;
+  left: 5px; /* Adjust this value according to your preference */
+  transform: translateY(-50%);
+  height: auto;
+  width: 45px; /* Adjust the width as needed */
+  pointer-events: none; /* This ensures the icon doesn't interfere with input events */
+}
+
+/* Adjust the top, left, width, and height properties according to your flag image size */
+
 /* .theme-btn::before {
   background-color: #fff;
   color: #f6a609;

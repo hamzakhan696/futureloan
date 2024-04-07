@@ -36,6 +36,7 @@
     //   lastScrollTop = scrollTop;
     // }
 
+
     //sticky header
     function navbarFixed() {
       if ($("#sticky").length) {

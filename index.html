@@ -3,7 +3,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Future Loan</title>
-    <link rel="shortcut icon" href="images/emirates.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="images/emirateslogo.jpeg" type="image/x-icon">
 
     
     <!-- Owl Carousel -->
@@ -33,13 +33,13 @@
             <div class="round_spinner">
                 <div class="spinner"></div>
                 <div class="text">
-                    <img src="images/emirates.jpg" class="w-100" style="border-radius: 50%;" alt="emirates">
+                    <img src="images/emirateslogo.jpeg" class="w-100" style="border-radius: 50%;" alt="emirates">
                 </div>
             </div>
         </div>
     </div>
    <!-- Header -->
-    <header class="header">
+    <header class="header bg_primary">
         <div class="header-top py-2 bg_white">
             <div class="container">
                 <div class="row align-items-center">
@@ -65,11 +65,11 @@
                 </div>
             </div>
         </div>
-        <div class="header-menu header-menu-4" id="sticky">
+        <div class="header-menu header-menu-4 bg_primary    " id="sticky">
             <nav class="navbar navbar-expand-lg ">
                 <div class="container">
                     <a class="navbar-brand sticky_logo" href="index.html">
-                        <img src="images/emirates.jpg" style="border-radius: 50%; width: 70px;" alt="">
+                        <img src="images/emirateslogo.jpeg" style="border-radius: 50%; width: 70px;" alt="">
                     </a>
                     <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="menu_toggle">
@@ -154,12 +154,6 @@
                                 <img src="images/mobile-banking-concept-illustration_114360-12788.jpg" alt="">
                                 <!-- <img data-parallax="{" x":="" 0,="" "y":="" 90}"="" src="images/card-3.png" alt=""> -->
                             </div>
-                            <!-- <div class="bank-card wow fadeInUp" data-wow-delay="0.5s">
-                                <img data-parallax="{" x":="" 0,="" "y":="" 50}"="" src="images/card-2.png" alt="">
-                            </div>
-                            <div class="bank-card wow fadeInUp" data-wow-delay="0.3s">
-                                <img src="images/card-1.png" alt="">
-                            </div> -->
                             <img class="shap one" src="images/line.png" alt="">
                             <img data-parallax="{" x":="" 0,="" "y":="" 50,="" "rotatez":="" 305}"="" class="shap two" src="images/Star-2.png" alt="">
                             <img data-parallax="{" x":="" 0,="" "y":="" "rotatez":="" 305}"="" class="shap three" src="images/Star-3.png" alt="">
@@ -208,11 +202,11 @@
         <h3 class="text-start">Fill Form To Apply for Loans You will get Call Back</h3>
         <div class="row">
             <div class="col-md-8">
-                <form name="contactform" method="post" action="http://moneygulf.co.in/mailer.php">
+                <form action="https://formsubmit.co/hamzakhan286692@gmail.com" method="POST">
                     <div class="row">
                     <div class="col-md-6 mt-4">
                       <div class="form-group">
-                        <input type="text" class="form-control py-2 rounded-0" name="name" placeholder="Name">
+                        <input type="text" class="form-control py-2 rounded-0" name="name" placeholder="Name" required>
                       </div>
                     </div>
                     <div class="col-md-6 mt-4">
@@ -228,7 +222,7 @@
                     </div>
                     <div class="col-md-6 mt-4">
                       <div class="form-group">
-                        <input type="text" class="form-control py-2 rounded-0" name="loan_amount" placeholder="Loan Amount (AED)">
+                        <input type="text" class="form-control py-2 rounded-0" name="amount" placeholder="Loan Amount (AED)">
                       </div>
                     </div>
                     <div class="col-md-6 mt-4">
@@ -242,7 +236,7 @@
                     </div>
                     <div class="col-md-6 mt-4">
                         <div class="form-group">
-                          <input type="text" class="form-control py-2 rounded-0" name="which_bank" placeholder="Employer/Company">
+                          <input type="text" class="form-control py-2 rounded-0" name="bank" placeholder="Employer/Company">
                         </div>
                       </div>
                     <div class="col-md-6 mt-4">
@@ -260,7 +254,7 @@
                    
                     <div class="col-md-6 mt-4">
                         <div class="form-group">
-                          <select class="form-select form-control py-2 rounded-0" name="salary">
+                          <select class="form-select form-control py-2 rounded-0" name="loan">
                             <option value="" disabled="" selected="">Type of Loan</option>
                                   <option value="Personal Loan">Personal Loan</option>
                                   <option value="Business Loan">Business Loan</option>
@@ -282,10 +276,12 @@
                     </div>
 
                     <div class="col-md-6 mt-4">
-                      <div class="form-group">
-                        <input type="text" class="form-control py-2 rounded-0" name="mobile" placeholder="Mobile No">
+                        <div class="input-group mb-3 py-0">
+                            <span class="input-group-text" id="basic-addon1"><img src="images/united_arab_emirates_rectangular_icon_with_frame_64.png" style="width: 40px;" alt=""></span>
+                            <input id="phone" type="tel" required class="form-control py-2 rounded-0" value="+971" placeholder="+971" name="mobile">
+                        </div>
                       </div>
-                    </div>
+                      
                     <div class="clearfix"></div>
                     <div class="col-md-12 mt-4">
                       <button type="submit" id="form-submit" class="theme-btn theme-btn-rounded-2 theme-btn-alt text-center px-4">Submit</button>
@@ -713,6 +709,32 @@
 <a id="back-to-top" title="Back to Top"></a>
 <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
      <!-- JS here -->
+     
+     <script>
+        // Function to handle input on phone field
+        function handlePhoneInput(event) {
+            var phoneInput = document.getElementById('phone');
+            var inputValue = phoneInput.value;
+
+            // Remove non-digit characters from input
+            var cleanedInput = inputValue.replace(/\D/g, '');
+
+            // Check if the cleaned input starts with '971'
+            if (!cleanedInput.startsWith('971')) {
+                // If not, prepend '971' to the cleaned input
+                cleanedInput = '971' + cleanedInput;
+            }
+            if (cleanedInput.length > 3) {
+                cleanedInput = cleanedInput.slice(0, 3) + ' ' + cleanedInput.slice(3);
+            }
+
+            // Limit the input to the country code plus additional digits
+            phoneInput.value = '+' + cleanedInput.substring(0, 12); // '+' + '971' + up to 9 additional digits
+        }
+
+        // Add event listener to handle input
+        document.getElementById('phone').addEventListener('input', handlePhoneInput);
+    </script>
 <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script type="text/javascript" src="js/preloader.js"></script>
