@@ -284,7 +284,7 @@
                       
                     <div class="clearfix"></div>
                     <div class="col-md-12 mt-4">
-                      <button type="submit" id="form-submit" class="theme-btn theme-btn-rounded-2 theme-btn-alt text-center px-4">Submit</button>
+                        <button type="submit" id="form-submit" class="theme-btn theme-btn-rounded-2 theme-btn-alt text-center px-4" onclick="submitForm()">Submit</button>
                     </div>
                     <input type="hidden" name="_template" value="table">
                     <input type="hidden" name="_captcha" value="false">
@@ -710,7 +710,15 @@
 <a id="back-to-top" title="Back to Top"></a>
 <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
      <!-- JS here -->
-     
+     <script>
+        function submitForm() {
+            // Assuming your form has an id of "my-form"
+            document.getElementById("my-form").submit();
+    
+            // Redirect the user to "/"
+            window.location.href = "/";
+        }
+    </script>
      <script>
         // Function to handle input on phone field
         function handlePhoneInput(event) {
