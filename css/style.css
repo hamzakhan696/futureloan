@@ -10190,7 +10190,7 @@ blockquote .author span {
   padding: 10px 0;
 }
 .footer .copyright a:hover {
-  color: #fff;
+  color: #F46E41;
 }
 .footer .copyright a:first-child {
   margin-left: 0;
@@ -10333,7 +10333,7 @@ blockquote .author span {
   transition: all 0.2s linear;
 }
 .footer-link li a:hover {
-  color: var(--brand_color);
+  color: #FF5733 !important;
 }
 
 .saas-footer-bottom {
@@ -10409,14 +10409,14 @@ blockquote .author span {
   border-radius: 50%;
   text-align: center;
   line-height: 48px;
-  background: #2C2C2C;
-  color: #797979;
+  background: #fff;
+  color:var(--brand_color);
   display: inline-block;
   margin-left: 6px;
 }
 .bank-footer-area .f-social a:hover {
-  color: var(--brand_color);
-  background: #fff;
+  color: #fff;
+  background: #f57950;
 }
 
 /*----------------------------------------------------*/
