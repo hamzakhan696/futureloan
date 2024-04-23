@@ -207,7 +207,7 @@ data-aos-easing="ease-in-sine">
             <div class="col-md-8" data-aos="fade-left"
             data-aos-offset="300"
             data-aos-easing="ease-in-sine">
-                <form id="my-form" action="https://formsubmit.co/hamzakhan286692@gmail.com" method="POST">
+                <form action="https://formsubmit.co/hamzakhan286692@gmail.com" method="POST">
                     <div class="row">
                     <div class="col-md-6 mt-4">
                       <div class="form-group">
@@ -770,31 +770,7 @@ data-aos-easing="ease-in-sine">
     });
 </script>
      <!-- JS here -->
-     <script>
-        document.getElementById("my-form").addEventListener("submit", function(event) {
-            // Prevent the default form submission behavior
-            event.preventDefault();
-    
-            // Submit the form asynchronously
-            fetch("https://formsubmit.co/hamzakhan286692@gmail.com", {
-                method: "POST",
-                body: new FormData(document.getElementById("my-form"))
-            })
-            .then(response => {
-                // Check if the form submission was successful
-                if (response.ok) {
-                    // Redirect the user to "/"
-                    window.location.href = "/";
-                } else {
-                    // Handle the error
-                    console.error("Form submission failed.");
-                }
-            })
-            .catch(error => {
-                console.error("Error:", error);
-            });
-        });
-    </script>
+
      <script>
         // Function to handle input on phone field
         function handlePhoneInput(event) {
