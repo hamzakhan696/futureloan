@@ -8,6 +8,7 @@
     max-width: 1200px;
   }
 }
+
 @media (max-width: 1500px) {
   /* New Version */
   .client-slider-2 .slick-arrow {
@@ -984,6 +985,9 @@
   }
 }
 @media (max-width: 575px) {
+  .header-menu .container {
+      max-width: 100% !important;
+  }
   .bank-card-img{
   padding-top: 104% !important;
   }
