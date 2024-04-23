@@ -457,7 +457,10 @@ input::-webkit-inner-spin-button {
   visibility: hidden;
   z-index: 1000;
 }
-
+.home-form{
+    background: #F6F6F6 !important;
+    padding: 20px !important
+}
 #back-to-top::after {
   content: "2";
   font-family: eleganticons;
