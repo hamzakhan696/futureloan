@@ -203,11 +203,11 @@
                     </div>
                     <div class="col-lg-6 offset-lg-1">
                         <div class="contact-form-widget">
-                            <form action="https://formsubmit.co/hamzakhan286692@gmail.com" method="POST">
+                            <form id="myForm" action="https://formsubmit.co/hamzakhan286692@gmail.com" method="POST">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <label for="f-name">Full Name</label>
-                                        <input type="text"  id="f-name" name="name" class="form-control" placeholder="What's your name?" required="">
+                                        <input type="text" id="f-name" name="name" class="form-control" placeholder="What's your name?" required="">
                                     </div>
                                     <div class="col-md-6 mt-20 mt-md-0">
                                         <label for="email-address">Email</label>
@@ -479,6 +479,15 @@
 <script>
     window.addEventListener("load", function() {
         AOS.init();
+    });
+</script>
+<script>
+    function redirectToPage() {
+        window.location.href = "contact.html";
+    }
+    document.getElementById("myForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        redirectToPage();
     });
 </script>
     <!-- JS here -->
